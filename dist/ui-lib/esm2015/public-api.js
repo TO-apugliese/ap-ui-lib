@@ -1,0 +1,7 @@
+/*
+ * Public API Surface of ui-lib
+ */
+export * from './lib/ui-lib.service';
+export * from './lib/ui-lib.component';
+export * from './lib/ui-lib.module';
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicHVibGljLWFwaS5qcyIsInNvdXJjZVJvb3QiOiIvVXNlcnMvYW50aG9ueS5wdWdsaWVzZS9kZXZlbG9wbWVudC9naXQvYXAtdWktbGliL3Byb2plY3RzL3VpLWxpYi9zcmMvIiwic291cmNlcyI6WyJwdWJsaWMtYXBpLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOztHQUVHO0FBRUgsY0FBYyxzQkFBc0IsQ0FBQztBQUNyQyxjQUFjLHdCQUF3QixDQUFDO0FBQ3ZDLGNBQWMscUJBQXFCLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyIvKlxuICogUHVibGljIEFQSSBTdXJmYWNlIG9mIHVpLWxpYlxuICovXG5cbmV4cG9ydCAqIGZyb20gJy4vbGliL3VpLWxpYi5zZXJ2aWNlJztcbmV4cG9ydCAqIGZyb20gJy4vbGliL3VpLWxpYi5jb21wb25lbnQnO1xuZXhwb3J0ICogZnJvbSAnLi9saWIvdWktbGliLm1vZHVsZSc7XG4iXX0=
