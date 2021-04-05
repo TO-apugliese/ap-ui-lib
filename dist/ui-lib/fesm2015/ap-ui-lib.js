@@ -1,9 +1,10 @@
-import { ɵɵdefineInjectable, Injectable, Component, NgModule } from '@angular/core';
+import * as i0 from '@angular/core';
+import { Injectable, Component, NgModule } from '@angular/core';
 
 class UiLibService {
     constructor() { }
 }
-UiLibService.ɵprov = ɵɵdefineInjectable({ factory: function UiLibService_Factory() { return new UiLibService(); }, token: UiLibService, providedIn: "root" });
+UiLibService.ɵprov = i0.ɵɵdefineInjectable({ factory: function UiLibService_Factory() { return new UiLibService(); }, token: UiLibService, providedIn: "root" });
 UiLibService.decorators = [
     { type: Injectable, args: [{
                 providedIn: 'root'
@@ -11,14 +12,14 @@ UiLibService.decorators = [
 ];
 UiLibService.ctorParameters = () => [];
 
-class UiLibComponent {
+class TextInputComponent {
     constructor() { }
     ngOnInit() {
     }
 }
-UiLibComponent.decorators = [
+TextInputComponent.decorators = [
     { type: Component, args: [{
-                selector: 'lib-ui-lib',
+                selector: 'ap-text-input',
                 template: `
     <p>
       ui-lib works!
@@ -26,15 +27,15 @@ UiLibComponent.decorators = [
   `
             },] }
 ];
-UiLibComponent.ctorParameters = () => [];
+TextInputComponent.ctorParameters = () => [];
 
-class UiLibModule {
+class TextInputModule {
 }
-UiLibModule.decorators = [
+TextInputModule.decorators = [
     { type: NgModule, args: [{
-                declarations: [UiLibComponent],
+                declarations: [TextInputComponent],
                 imports: [],
-                exports: [UiLibComponent]
+                exports: [TextInputComponent]
             },] }
 ];
 
@@ -46,5 +47,5 @@ UiLibModule.decorators = [
  * Generated bundle index. Do not edit.
  */
 
-export { UiLibComponent, UiLibModule, UiLibService };
+export { TextInputComponent, TextInputModule, UiLibService };
 //# sourceMappingURL=ap-ui-lib.js.map

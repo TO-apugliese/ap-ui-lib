@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { UiLibComponent } from './ui-lib.component';
+import { TextInputComponent } from './text-input.component';
 
 describe('UiLibComponent', () => {
-  let component: UiLibComponent;
-  let fixture: ComponentFixture<UiLibComponent>;
+  let component: TextInputComponent;
+  let fixture: ComponentFixture<TextInputComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ UiLibComponent ]
+      declarations: [ TextInputComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(UiLibComponent);
+    fixture = TestBed.createComponent(TextInputComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

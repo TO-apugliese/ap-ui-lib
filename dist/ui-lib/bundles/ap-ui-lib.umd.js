@@ -4,12 +4,34 @@
     (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global['ap-ui-lib'] = {}, global.ng.core));
 }(this, (function (exports, i0) { 'use strict';
 
+    function _interopNamespace(e) {
+        if (e && e.__esModule) return e;
+        var n = Object.create(null);
+        if (e) {
+            Object.keys(e).forEach(function (k) {
+                if (k !== 'default') {
+                    var d = Object.getOwnPropertyDescriptor(e, k);
+                    Object.defineProperty(n, k, d.get ? d : {
+                        enumerable: true,
+                        get: function () {
+                            return e[k];
+                        }
+                    });
+                }
+            });
+        }
+        n['default'] = e;
+        return Object.freeze(n);
+    }
+
+    var i0__namespace = /*#__PURE__*/_interopNamespace(i0);
+
     var UiLibService = /** @class */ (function () {
         function UiLibService() {
         }
         return UiLibService;
     }());
-    UiLibService.ɵprov = i0.ɵɵdefineInjectable({ factory: function UiLibService_Factory() { return new UiLibService(); }, token: UiLibService, providedIn: "root" });
+    UiLibService.ɵprov = i0__namespace.ɵɵdefineInjectable({ factory: function UiLibService_Factory() { return new UiLibService(); }, token: UiLibService, providedIn: "root" });
     UiLibService.decorators = [
         { type: i0.Injectable, args: [{
                     providedIn: 'root'
@@ -17,31 +39,31 @@
     ];
     UiLibService.ctorParameters = function () { return []; };
 
-    var UiLibComponent = /** @class */ (function () {
-        function UiLibComponent() {
+    var TextInputComponent = /** @class */ (function () {
+        function TextInputComponent() {
         }
-        UiLibComponent.prototype.ngOnInit = function () {
+        TextInputComponent.prototype.ngOnInit = function () {
         };
-        return UiLibComponent;
+        return TextInputComponent;
     }());
-    UiLibComponent.decorators = [
+    TextInputComponent.decorators = [
         { type: i0.Component, args: [{
-                    selector: 'lib-ui-lib',
+                    selector: 'ap-text-input',
                     template: "\n    <p>\n      ui-lib works!\n    </p>\n  "
                 },] }
     ];
-    UiLibComponent.ctorParameters = function () { return []; };
+    TextInputComponent.ctorParameters = function () { return []; };
 
-    var UiLibModule = /** @class */ (function () {
-        function UiLibModule() {
+    var TextInputModule = /** @class */ (function () {
+        function TextInputModule() {
         }
-        return UiLibModule;
+        return TextInputModule;
     }());
-    UiLibModule.decorators = [
+    TextInputModule.decorators = [
         { type: i0.NgModule, args: [{
-                    declarations: [UiLibComponent],
+                    declarations: [TextInputComponent],
                     imports: [],
-                    exports: [UiLibComponent]
+                    exports: [TextInputComponent]
                 },] }
     ];
 
@@ -53,8 +75,8 @@
      * Generated bundle index. Do not edit.
      */
 
-    exports.UiLibComponent = UiLibComponent;
-    exports.UiLibModule = UiLibModule;
+    exports.TextInputComponent = TextInputComponent;
+    exports.TextInputModule = TextInputModule;
     exports.UiLibService = UiLibService;
 
     Object.defineProperty(exports, '__esModule', { value: true });

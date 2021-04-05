@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'lib-ui-lib',
+  selector: 'ap-text-input',
   template: `
     <p>
       ui-lib works!
@@ -10,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
   styles: [
   ]
 })
-export class UiLibComponent implements OnInit {
+export class TextInputComponent implements OnInit {
 
   constructor() { }
 

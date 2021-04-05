@@ -8,7 +8,8 @@
     "build:prod": "ng build ui-lib --prod",
     "test": "ng test",
     "lint": "ng lint",
-    "npm:publish": "yarn build:prod && cd dist/ui-lib && npm publish"
+    "npm:publish": "yarn build:prod && cd dist/ui-lib && npm publish",
+    "cp": "cp -R dist/ui-lib/* ../ap-mono/node_modules/ap-ui-lib"
   },
   "private": false,
   "dependencies": {
