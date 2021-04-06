@@ -3,5 +3,6 @@
   "dest": "../../dist/ui-lib",
   "lib": {
     "entryFile": "src/public-api.ts"
-  }
+  },
+  "assets": ["src/lib/resources/css/materialize.compiled.css"]
 }

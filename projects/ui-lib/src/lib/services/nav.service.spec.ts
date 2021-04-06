@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { UiLibService } from './ui-lib.service';
+import { ApNavService } from './ap-nav.service';
 
 describe('UiLibService', () => {
-  let service: UiLibService;
+  let service: ApNavService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(UiLibService);
+    service = TestBed.inject(ApNavService);
   });
 
   it('should be created', () => {

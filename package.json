@@ -5,10 +5,11 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build:prod": "ng build ui-lib --prod",
+    "build:prod": "yarn compile:sass && ng build ui-lib --prod",
+    "compile:sass": "node-sass projects/ui-lib/src/lib/resources/sass/materialize.scss projects/ui-lib/src/lib/resources/css/materialize.compiled.css",
     "test": "ng test",
     "lint": "ng lint",
-    "npm:publish": "yarn build:prod && cd dist/ui-lib && npm publish",
+    "npm:publish": "yarn build:prod && cd dist/ui-lib && npm login && npm publish",
     "cp": "cp -R dist/ui-lib/* ../ap-mono/node_modules/ap-ui-lib"
   },
   "private": false,

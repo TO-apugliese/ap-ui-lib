@@ -4,7 +4,7 @@
     "directive-selector": [
       true,
       "attribute",
-      "lib",
+      "ap",
       "camelCase"
     ],
     "component-selector": [
@@ -12,6 +12,11 @@
       "element",
       "ap",
       "kebab-case"
-    ]
+    ],
+    "variable-name": [
+      true,
+      "allow-leading-underscore"
+    ],
+    "curly": false
   }
 }
