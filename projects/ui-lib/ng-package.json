@@ -4,5 +4,9 @@
   "lib": {
     "entryFile": "src/public-api.ts"
   },
-  "assets": ["src/lib/resources/css/materialize.compiled.css"]
+  "assets": [
+    "src/lib/resources/css/materialize.compiled.css",
+    "src/lib/resources/js/bin/materialize.min.js"
+  ],
+  "whitelistedNonPeerDependencies": ["uuid"]
 }

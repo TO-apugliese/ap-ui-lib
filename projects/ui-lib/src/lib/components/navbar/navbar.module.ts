@@ -1,6 +1,6 @@
 import {ModuleWithProviders, NgModule} from '@angular/core';
-import {NavbarComponent} from './navbar.component';
-import {CommonModule} from '@angular/common';
+import {ApNavbarComponent}             from './navbar.component';
+import {CommonModule}                  from '@angular/common';
 import {RouterModule} from '@angular/router';
 import {AP_NAV_ITEMS} from '../../services/injection-tokens';
 import {ApNavItem, ApNavService} from '../../services/ap-nav.service';
@@ -10,17 +10,17 @@ export function navServiceFactory(items: ApNavItem[]): ApNavService {
 }
 
 @NgModule({
-  declarations: [NavbarComponent],
+  declarations: [ApNavbarComponent],
   imports: [
     CommonModule,
     RouterModule
   ],
-  exports: [NavbarComponent],
+  exports: [ApNavbarComponent],
 })
-export class NavbarModule {
-  static forRoot(items: ApNavItem[]): ModuleWithProviders<NavbarModule> {
+export class ApNavbarModule {
+  static forRoot(items: ApNavItem[]): ModuleWithProviders<ApNavbarModule> {
     return {
-      ngModule:  NavbarModule,
+      ngModule:  ApNavbarModule,
       providers: [
         {
           provide:  AP_NAV_ITEMS,

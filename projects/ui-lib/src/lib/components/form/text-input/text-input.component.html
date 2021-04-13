@@ -1,0 +1,5 @@
+<div class="input-field">
+    <i *ngIf="icon" class="material-icons prefix">{{icon}}</i>
+    <input [id]="id" [(ngModel)]="value" type="text" class="validate">
+    <label [for]="id" [class.active]="!!value">{{ labelKey }}</label>
+</div>
